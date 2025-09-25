@@ -10,8 +10,6 @@
             }
         }
 body {
-            height: 100px;   
-            margin: 0;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(270deg, #7ca4a5, #1a3448, #212c3b, #261977);
             background-size: 800% 800%;
