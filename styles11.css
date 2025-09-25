@@ -9,25 +9,29 @@
                 background-position: 0% 50%;
             }
         }
+/* center the page and make background full height */
 body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(270deg, #7ca4a5, #1a3448, #212c3b, #261977);
-            background-size: 800% 800%;
-            animation: gradient-animation 10s ease infinite;
-        }
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #7ca4a5, #1a3448, #212c3b, #261977);
+    background-size: 800% 800%;
+    animation: gradient-animation 10s ease infinite;
+}
 
-    
+/* centered card */
 .right-panel {
-            background: rgba(255, 255, 255, 0.24);
-            padding: 40px;
-            max-width: 450px;
-            width: 100%;
-            margin-top: 50px;
-            margin-left: 350px;
-            margin-top: 50px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
+    background: rgba(255, 255, 255, 0.24);
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 20px; /* small side spacing on narrow viewports */
+}
 
         .form-header {
             font-size: 2rem;
@@ -43,7 +47,7 @@ body {
         }
 
         .form-input {
-            width: 100%;
+            width: 90%;
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -135,3 +139,23 @@ body {
             white-space: nowrap;
             border: 0;
         }
+
+          /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .right-panel {
+                padding: 20px;
+                max-width: 90%;
+            }
+
+            .form-header {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* responsive tweaks */
+@media (max-width: 600px) {
+    .right-panel {
+        padding: 24px;
+        max-width: 360px;
+    }
+}
