@@ -86,23 +86,7 @@ html{
             background-color: #1e4e7c;
         }
 
-        /* Responsive design for mobile screens */
-        @media (max-width: 768px) {
-            .main-container {
-                grid-template-columns: 1fr; /* Stacks the columns into a single column */
-                max-width: 100%;
-                border-radius: 0;
-            }
 
-            .left-panel, .right-panel {
-                width: 100%;
-                padding: 20px;
-            }
-            
-            .left-panel {
-                min-height: 30vh; /* Adjusts minimum height for mobile */
-            }
-        }
 
          @keyframes gradient-animation {
             0% {
