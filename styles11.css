@@ -1,0 +1,139 @@
+@keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+body {
+            height: 600px;   
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(270deg, #7ca4a5, #1a3448, #212c3b, #261977);
+            background-size: 800% 800%;
+            animation: gradient-animation 10s ease infinite;
+        }
+
+    
+.right-panel {
+            background: rgba(255, 255, 255, 0.24);
+            padding: 40px;
+            max-width: 450px;
+            width: 100%;
+            margin-top: 50px;
+            margin-left: 350px;
+            margin-top: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .login-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .forgot-link {
+            color: #08182a;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-align: right;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-link:hover {
+            color: #08182a;
+            text-decoration: underline;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #08182a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #1e4e7c;
+        }
+
+        .google-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #fff;
+            color: #555;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .google-btn i {
+            color: #dc4e41; /* Google's red icon color */
+        }
+        
+        .google-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+        .form-footer-text {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #08182a;
+            margin-top: 1.5rem;
+        }
+
+        .form-footer-link {
+            color: #08182a;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .form-footer-link:hover {
+            color: #1e4e7c;
+            text-decoration: underline;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
