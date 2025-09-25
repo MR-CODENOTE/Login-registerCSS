@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.main-container {
+            display: grid;
+            grid-template-columns: 40% 60%; /* Sets up two columns */
+            min-height: 80vh;
+            max-width: 900px;
+            margin-top: 50px;
+            margin-left: 170px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        }
+
+        .left-panel {
+            background-color: #08182a; /* The blue background */
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .right-panel {
+            background: rgba(255, 255, 255, 0.24);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+
+        .content p {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+      
+        .form-header h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .form-input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-input {
+            width: 95%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 12px;
+            background-color:  #08182a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #1e4e7c;
+        }
+
+        /* Responsive design for mobile screens */
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr; /* Stacks the columns into a single column */
+                max-width: 100%;
+                border-radius: 0;
+            }
+
+            .left-panel, .right-panel {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .left-panel {
+                min-height: 30vh; /* Adjusts minimum height for mobile */
+            }
+        }
+
+         @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+body {
+            height: 800px;   
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(270deg, #7ca4a5, #1a3448, #212c3b, #261977);
+            background-size: 800% 800%;
+            animation: gradient-animation 10s ease infinite;
+        }
+
+    
+  /* The container for our typing text */
+        .typing-container {
+            display: inline-block;
+        }
+        
+        /* The blinking cursor effect */
+        .typing-container p::after {
+            content: '|'; /* The cursor character */
+            display: inline-block;
+            animation: blink 0.7s infinite;
+            color: #61dafb; /* Cursor color */
+        }
+        
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
