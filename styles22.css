@@ -116,7 +116,8 @@ html{
             }
         }
 body {
-            height: 800px;   
+            height: 800px;
+            width: 1000px;
             margin: 0;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(270deg, #7ca4a5, #1a3448, #212c3b, #261977);
